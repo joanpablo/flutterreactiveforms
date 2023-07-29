@@ -1,0 +1,6 @@
+<app-feature-highlight
+  *ngFor="let featureHighlight of featureHighlights; index as i"
+  [feature]="featureHighlight"
+  [invertOrientation]="i % 2 === 0"
+>
+</app-feature-highlight>

@@ -1,0 +1,11 @@
+:host {
+  @apply flex flex-1 overflow-hidden;
+}
+
+aside.opened {
+  @apply translate-x-0;
+}
+
+.sidebar-nav-backdrop.opened {
+  @apply bg-onSurfaceVariant visible;
+}

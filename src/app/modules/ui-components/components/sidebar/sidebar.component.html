@@ -1,0 +1,24 @@
+<div
+  class="sidebar-nav-backdrop invisible opacity-30 absolute top-0 right-0 bottom-0 left-0 transition-colors lg:hidden"
+  [ngClass]="{ opened }"
+  (click)="notifyCloseClicked()"
+  aria-hidden="true"
+  tabindex="-1"
+></div>
+
+<aside
+  class="flex flex-col absolute top-0 right-16 bottom-0 left-0 overflow-auto bg-inherit shadow-xl transition translate-x-[-100%] lg:translate-x-0 lg:relative lg:w-80"
+  [ngClass]="{ opened }"
+>
+  <div class="lg:hidden">
+    <ng-content select="[sidebar-header]"></ng-content>
+  </div>
+
+  <div class="flex-1">
+    <ng-content select="[sidebar-nav]"></ng-content>
+  </div>
+</aside>
+
+<div role="main" class="flex flex-col flex-1 overflow-y-auto">
+  <ng-content select="[sidebar-content]"></ng-content>
+</div>

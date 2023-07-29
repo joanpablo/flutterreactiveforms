@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="7889140380275773577" datatype="html">
+        <source>Easy &amp; clean</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/docs/components/feature-highlight-list/feature-highlight-list.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6412069170158193263" datatype="html">
+        <source>Clean separation between views and models. Maintenance of data synchronization in a two-way binding mechanism. Just declare your models and link them to your widgets.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/docs/components/feature-highlight-list/feature-highlight-list.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1440137204824540788" datatype="html">
+        <source>Transparent validation</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/docs/components/feature-highlight-list/feature-highlight-list.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4742236723243844642" datatype="html">
+        <source>Validations occur transparently. Declare your models and specify the validators you need. It will also handle the validity of the entire Form and will show the error messages when needed.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/docs/components/feature-highlight-list/feature-highlight-list.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7620223608261329783" datatype="html">
+        <source>Integrate with any state management library</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/docs/components/feature-highlight-list/feature-highlight-list.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4586841864843170910" datatype="html">
+        <source>Using a state management library cleans your code and separates responsibilities between the UI and the business logic.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/docs/components/feature-highlight-list/feature-highlight-list.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="187187500641108332" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ heroHighlightedText }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/docs/components/hero-section/hero-section.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/docs/components/hero-section/hero-section.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3163044740176820503" datatype="html">
+        <source>Get started</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/docs/components/hero-section/hero-section.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6623356474475707124" datatype="html">
+        <source>Reactive Model-Driven</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/docs/components/hero-section/hero-section.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3463209735768256808" datatype="html">
+        <source>library to handle Forms in Flutter</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/docs/components/hero-section/hero-section.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8484642976277941743" datatype="html">
+        <source>Reactive Forms in Flutter have never been so easy</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/docs/components/hero-section/hero-section.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

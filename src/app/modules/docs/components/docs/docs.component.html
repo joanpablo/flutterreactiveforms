@@ -1,0 +1,30 @@
+<header class="absolute top-0 w-full bg-surfaceBright shadow-lg">
+  <app-toolbar>
+    <button leading appIconButton (click)="toggleSidebar()" class="lg:hidden">
+      <fa-icon [icon]="icons.menu" class="text-xl"></fa-icon>
+    </button>
+    <app-logo title class="ml-4 lg:ml-0" />
+  </app-toolbar>
+</header>
+
+<app-sidebar
+  [opened]="isSidebarOpened()"
+  (closeClicked)="closeSidebar()"
+  class="bg-surface"
+>
+  <app-toolbar sidebar-header>
+    <app-logo title />
+    <button actions appIconButton (click)="closeSidebar()">
+      <fa-icon [icon]="icons.close" class="text-xl"></fa-icon>
+    </button>
+  </app-toolbar>
+
+  <app-nav-bar sidebar-nav />
+
+  <div sidebar-content class="flex flex-col flex-1 p-4 lg:p-8">
+    <section class="flex-1">
+      <router-outlet />
+    </section>
+    <app-docs-footer />
+  </div>
+</app-sidebar>

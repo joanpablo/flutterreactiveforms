@@ -1,0 +1,46 @@
+<nav>
+  <ng-container
+    *ngTemplateOutlet="
+      navigation;
+      context: { items: navItems.items, expanded: true }
+    "
+  ></ng-container>
+</nav>
+
+<ng-template #navigation let-items="items" let-expanded="expanded">
+  <ul [ngClass]="{ expanded }" class="hidden">
+    <li
+      class="flex flex-col min-h-[45px]"
+      routerLinkActive="bg-surfaceBright text-primary"
+      *ngFor="let item of items"
+      [ngClass]="{
+        'pl-3': item.level === 1,
+        'pl-6': item.level === 2,
+        'pl-9': item.level === 3,
+        'pl-12': item.level === 4
+      }"
+    >
+      <a *ngIf="item.link" [routerLink]="item.link" class="px-4 py-2 flex-1">
+        {{ item.label }}
+      </a>
+
+      <button
+        *ngIf="!item.link"
+        (click)="item.isExpanded = !item.isExpanded"
+        class="text-left px-4 py-2 flex flex-1"
+        i18n
+      >
+        <span class="flex-1">{{ item.label }}</span>
+        <fa-icon *ngIf="!item.isExpanded" [icon]="icons.angleRight" />
+        <fa-icon *ngIf="item.isExpanded" [icon]="icons.angleDown" />
+      </button>
+
+      <ng-container
+        *ngTemplateOutlet="
+          navigation;
+          context: { items: item.children, expanded: item.isExpanded }
+        "
+      ></ng-container>
+    </li>
+  </ul>
+</ng-template>
